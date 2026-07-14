@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aprende Claude Desde Cero | Taller Gratuito en Vivo</title>
+<meta name="description" content="Aprende a dominar Claude (IA de Anthropic) y automatiza tu negocio como un emprendedor de alto nivel. Taller gratuito en vivo con Jhei Trujillo, El Solucionador.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<!-- =========================================================
+     HERO / FORMULARIO DE INSCRIPCIÓN
+     Edita aquí: título del evento, fecha/hora, headline
+========================================================== -->
+<header class="hero">
+  <div class="hero__glow hero__glow--1"></div>
+  <div class="hero__glow hero__glow--2"></div>
+
+  <div class="container">
+
+    <div class="hero__banner">
+      <img class="hero__photo" src="assets/img/presentador.jpg" alt="Jhei Trujillo">
+      <div class="hero__scrim"></div>
+
+      <div class="hero__content">
+        <p class="kicker">
+          <span class="kicker__dot"></span>
+          TALLER EN VIVO
+        </p>
+
+        <h1 class="hero__title">
+          APRENDE CLAUDE
+          <span class="hero__title-accent">DESDE CERO</span>
+        </h1>
+        <p class="hero__edition">1ª EDICIÓN · 2026</p>
+
+        <p class="hero__headline">
+          Instala y configura <strong>Claude</strong> desde cero para trabajar con él
+          profesionalmente en cualquier tarea de tu negocio, sin saber programar.
+        </p>
+
+        <div class="hero__precio">
+          <span class="hero__precio-label">Inversión del taller</span>
+          <span class="hero__precio-monto">$97 dólares</span>
+        </div>
+
+        <p class="hero__date">
+          <svg class="hero__date-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M3 9.5H21" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M8 3V6.5M16 3V6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <span>Día <strong>25 de julio</strong> de <strong>9:00 AM a 12:00 PM (COL)</strong> en vivo por Zoom</span>
+        </p>
+
+        <form class="hero__form" id="inscripcion-form">
+          <input type="text" name="nombre" placeholder="Nombre" required>
+          <input type="tel" name="telefono" placeholder="+57 300 123 4567" required>
+          <input type="email" name="email" placeholder="Correo electrónico" required>
+          <button type="submit" class="btn btn--primary">QUIERO MI CUPO</button>
+          <p class="hero__form-note" id="form-feedback" aria-live="polite"></p>
+        </form>
+        <p class="hero__micro">Cupos limitados · Taller en vivo con grabación incluida · Pago de contado</p>
+      </div>
+
+      <div class="hero__caption">
+        <p class="hero__signature">Jhei Trujillo</p>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- =========================================================
+     EL PROBLEMA / EL AVATAR
+     Antes vs. Después de configurar Claude correctamente
+========================================================== -->
+<section class="seccion problema" id="problema">
+  <div class="container">
+    <h2 class="seccion__titulo">¿TE HA PASADO ESTO CON CLAUDE?</h2>
+    <p class="problema__intro">
+      El 66% de los profesionales y emprendedores en LATAM siente que si no aprende a usar IA
+      ahora, se va a quedar atrás. El problema no es la falta de ganas: es que casi nadie sabe
+      por dónde empezar ni cómo configurarla bien.
+    </p>
+
+    <div class="antes-despues">
+      <article class="antes-despues__col antes-despues__col--antes">
+        <p class="antes-despues__etiqueta">ANTES</p>
+        <ul class="antes-despues__lista">
+          <li>Sabes que Claude existe. Lo has abierto una o dos veces.</li>
+          <li>Le escribiste algo genérico, te dio una respuesta genérica y lo cerraste pensando "esto no es para mí".</li>
+          <li>No tienes nada configurado. Cada vez que lo abres, empiezas desde cero.</li>
+          <li>No sabes qué son los proyectos, los skills ni la memoria.</li>
+          <li>Ves a otros usarlo como una herramienta poderosa y no entiendes por qué a ti no te funciona igual.</li>
+        </ul>
+      </article>
+
+      <div class="antes-despues__flecha" aria-hidden="true">→</div>
+
+      <article class="antes-despues__col antes-despues__col--despues">
+        <p class="antes-despues__etiqueta antes-despues__etiqueta--despues">DESPUÉS</p>
+        <ul class="antes-despues__lista">
+          <li>Tienes Claude completamente instalado y configurado para tu negocio específico.</li>
+          <li>La memoria guarda tu contexto: no tienes que repetirle quién eres ni qué haces.</li>
+          <li>Tus proyectos están organizados y tus prompts base listos.</li>
+          <li>Tus conectores con Gmail y Drive están activos.</li>
+          <li>Abres Claude y en minutos resuelves lo que antes te tomaba horas.</li>
+        </ul>
+      </article>
+    </div>
+
+    <p class="problema__cierre">Por primera vez, sientes que la IA trabaja para ti — no al revés.</p>
+  </div>
+</section>
+
+<!-- =========================================================
+     QUÉ VAS A APRENDER / TEMARIO
+     Edita aquí: los 5 bloques del taller de 3 horas (hora de inicio en hero__date)
+========================================================== -->
+<section class="seccion aprender">
+  <div class="container">
+    <h2 class="seccion__titulo">¿QUÉ VAS A APRENDER EN ESTE TALLER?</h2>
+    <p class="aprender__subtitulo">3 horas en vivo. De cero a tu primer agente de IA funcionando.</p>
+
+    <div class="temario">
+
+      <article class="temario__item">
+        <div class="temario__marcador"><span class="temario__numero">01</span></div>
+        <div class="temario__contenido">
+          <h3 class="temario__titulo">Instala y configura Claude correctamente</h3>
+          <p class="temario__texto">
+            Vas a dejar Claude instalado y bien configurado en tu computador, sin pasos de más
+            ni errores comunes, listo para usarlo desde el primer minuto en tu negocio.
+          </p>
+        </div>
+      </article>
+
+      <article class="temario__item">
+        <div class="temario__marcador"><span class="temario__numero">02</span></div>
+        <div class="temario__contenido">
+          <h3 class="temario__titulo">Cómo usar Claude como un profesional</h3>
+          <p class="temario__texto">
+            Aprende a darle instrucciones claras a Claude para que te entregue respuestas
+            útiles a la primera, sin perder tiempo reescribiendo lo mismo una y otra vez.
+          </p>
+        </div>
+      </article>
+
+      <article class="temario__item">
+        <div class="temario__marcador"><span class="temario__numero">03</span></div>
+        <div class="temario__contenido">
+          <h3 class="temario__titulo">Claude Cowork y Claude Code</h3>
+          <p class="temario__texto">
+            Conoce las dos herramientas con las que los profesionales trabajan con Claude todos
+            los días: Cowork para las tareas de tu negocio y Code para automatizar procesos.
+          </p>
+        </div>
+      </article>
+
+      <article class="temario__item">
+        <div class="temario__marcador"><span class="temario__numero">04</span></div>
+        <div class="temario__contenido">
+          <h3 class="temario__titulo">Potencia a Claude con Skills</h3>
+          <p class="temario__texto">
+            Instala Skills que le enseñan a Claude a resolver tareas específicas de tu negocio,
+            para que trabaje exactamente como tú lo necesitas, no de forma genérica.
+          </p>
+        </div>
+      </article>
+
+      <article class="temario__item temario__item--ultimo">
+        <div class="temario__marcador"><span class="temario__numero">05</span></div>
+        <div class="temario__contenido">
+          <h3 class="temario__titulo">Crea tu primer agente</h3>
+          <p class="temario__texto">
+            Sales del taller con tu primer agente de IA funcionando: una tarea de tu negocio que
+            antes hacías tú a mano, ahora resuelta automáticamente por Claude.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     BIO DEL PRESENTADOR
+     Edita aquí: historia y credenciales
+========================================================== -->
+<section class="seccion bio">
+  <div class="container bio__grid">
+
+    <div class="bio__media">
+      <img class="bio__photo" src="assets/img/presentador-bio.jpg" alt="Jhei Trujillo">
+      <div class="bio__sello">
+        <span class="bio__sello-inicial">JT</span>
+        <span class="bio__sello-firma">Jhei Trujillo</span>
+      </div>
+    </div>
+
+    <div class="bio__content">
+      <h2 class="bio__nombre">JHEI TRUJILLO — IA GROWTH STRATEGIST</h2>
+      <p class="bio__texto">
+        Soy el fundador de AIVI, la plataforma de IA en español más grande para emprendedores
+        hispanos. Llevo más de 8 años en estrategia de contenido viral y crecimiento digital.
+        Construí y operé una agencia real en LATAM antes de convertir mi metodología en tecnología.
+      </p>
+      <p class="bio__texto">
+        No enseño teoría — te muestro lo que funciona en pantalla, con negocios reales y números
+        reales. Mi misión es que tú también domines la IA, sin importar tu nivel técnico.
+      </p>
+
+      <div class="bio__stats">
+        <div class="bio__stat">
+          <span class="bio__stat-numero">8+</span>
+          <span class="bio__stat-label">años de experiencia</span>
+        </div>
+        <div class="bio__stat">
+          <span class="bio__stat-numero">5,500+</span>
+          <span class="bio__stat-label">estudiantes formados</span>
+        </div>
+        <div class="bio__stat">
+          <span class="bio__stat-numero">700+</span>
+          <span class="bio__stat-label">negocios asesorados</span>
+        </div>
+      </div>
+
+      <a href="https://buy.stripe.com/dRm00j5X0aVKfY77iL4gg0v" class="btn btn--primary btn--inline">QUIERO MI CUPO</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================================================
+     OFERTA / BONOS
+     Edita aquí: precio, bonos y condiciones de la inscripción
+========================================================== -->
+<section class="seccion oferta" id="oferta">
+  <div class="container">
+    <h2 class="seccion__titulo">TODO LO QUE RECIBES HOY</h2>
+
+    <div class="bonos">
+      <article class="bono">
+        <p class="bono__emoji">🎁</p>
+        <h3 class="bono__titulo">Biblioteca de Prompts Listos</h3>
+        <p class="bono__texto">
+          50 prompts probados para los casos de uso más frecuentes en negocios de LATAM, listos
+          para copiar, pegar y adaptar. Nunca más empiezas desde la pantalla en blanco.
+        </p>
+        <p class="bono__valor">Valor: $97 USD</p>
+      </article>
+
+      <article class="bono">
+        <p class="bono__emoji">🎁</p>
+        <h3 class="bono__titulo">Plantilla de Configuración Completa</h3>
+        <p class="bono__texto">
+          La plantilla exacta que usa Jhei para configurar Claude en sus proyectos, con
+          instrucciones de memoria, skills y conectores ya escritos. Solo rellenas tus datos.
+        </p>
+        <p class="bono__valor">Valor: $47 USD</p>
+      </article>
+
+      <article class="bono">
+        <p class="bono__emoji">🎁</p>
+        <h3 class="bono__titulo">Grabación + Acceso a Actualizaciones</h3>
+        <p class="bono__texto">
+          La grabación completa del taller, disponible por mínimo 3 meses para repasar tu
+          configuración cuando la necesites. Si Claude lanza cambios importantes, se actualiza el material.
+        </p>
+        <p class="bono__valor">Valor: $197 USD</p>
+      </article>
+    </div>
+
+    <div class="oferta__resumen">
+      <p class="oferta__valor-total">Valor total de los bonos: $341 USD</p>
+      <p class="oferta__precio">Hoy inviertes solo <strong>$97 USD</strong></p>
+      <p class="oferta__condiciones">
+        Taller en vivo con grabación incluida · Cupos limitados · Pago de contado
+      </p>
+      <a href="https://buy.stripe.com/dRm00j5X0aVKfY77iL4gg0v" class="btn btn--primary btn--inline">QUIERO MI CUPO</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CTA FINAL
+========================================================== -->
+<section class="seccion cta-final">
+  <div class="container cta-final__box">
+    <h2 class="cta-final__titulo">Deja de usar Claude a medias.</h2>
+    <p class="cta-final__texto">
+      Instálalo, configúralo y ponlo a trabajar para tu negocio desde hoy. Cupos limitados.
+    </p>
+    <a href="https://buy.stripe.com/dRm00j5X0aVKfY77iL4gg0v" class="btn btn--primary btn--inline">QUIERO MI CUPO</a>
+  </div>
+</section>
+
+<!-- =========================================================
+     PREGUNTAS FRECUENTES / OBJECIONES
+     Edita aquí: dudas más comunes de tu audiencia
+========================================================== -->
+<section class="seccion faq" id="faq">
+  <div class="container">
+    <h2 class="seccion__titulo">¿AÚN TIENES DUDAS?</h2>
+
+    <div class="faq__lista">
+
+      <article class="faq__item">
+        <h3 class="faq__pregunta">"No sé nada de IA ni de tecnología"</h3>
+        <p class="faq__respuesta">Este taller empieza desde cero. Si sabes abrir una app en tu teléfono, puedes hacer esto.</p>
+      </article>
+
+      <article class="faq__item">
+        <h3 class="faq__pregunta">"Ya uso ChatGPT y me funciona"</h3>
+        <p class="faq__respuesta">ChatGPT y Claude no son lo mismo. Claude tiene memoria, proyectos y conectores que ChatGPT no tiene. En este taller vas a ver la diferencia en vivo.</p>
+      </article>
+
+      <article class="faq__item">
+        <h3 class="faq__pregunta">"No tengo tiempo para aprender algo nuevo"</h3>
+        <p class="faq__respuesta">El taller es una sola sesión. En menos de 3 horas tienes Claude configurado y funcionando. No es un curso de semanas.</p>
+      </article>
+
+      <article class="faq__item">
+        <h3 class="faq__pregunta">"Ya intenté usar Claude y no me funcionó"</h3>
+        <p class="faq__respuesta">Lo usaste mal, como el 90% que lo abre sin configurarlo. Este taller existe exactamente para eso.</p>
+      </article>
+
+      <article class="faq__item">
+        <h3 class="faq__pregunta">"Es muy caro para un taller"</h3>
+        <p class="faq__respuesta">Lo que gastas en este taller te lo devuelve la primera semana de trabajo con Claude configurado. El tiempo que ahorras vale más.</p>
+      </article>
+
+      <article class="faq__item">
+        <h3 class="faq__pregunta">"¿Y si no puedo asistir en vivo?"</h3>
+        <p class="faq__respuesta">La grabación queda disponible para que la veas cuando puedas.</p>
+      </article>
+
+      <article class="faq__item">
+        <h3 class="faq__pregunta">"¿Esto funciona para mi tipo de negocio?"</h3>
+        <p class="faq__respuesta">Si tu negocio necesita comunicarse, crear contenido, responder clientes o analizar información, Claude funciona para ti.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================== -->
+<footer class="footer">
+  <p>TODOS LOS DERECHOS RESERVADOS® · AIVI</p>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
