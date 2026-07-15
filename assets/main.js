@@ -9,7 +9,8 @@ document.getElementById('inscripcion-form').addEventListener('submit', function 
   const nombre = this.elements.nombre.value.trim();
   const indicativo = this.elements.indicativo.value.trim();
   const numero = this.elements.numero.value.trim();
-  const telefono = numero ? indicativo + ' ' + numero : '';
+  // Sin el "+" al inicio: Google Sheets interpreta un valor que empieza con "+" como fórmula (#ERROR!).
+  const telefono = numero ? indicativo.replace('+', '') + ' ' + numero : '';
   const email = this.elements.email.value.trim();
   const feedback = document.getElementById('form-feedback');
 
