@@ -7,11 +7,13 @@ document.getElementById('inscripcion-form').addEventListener('submit', function 
   event.preventDefault();
 
   const nombre = this.elements.nombre.value.trim();
-  const telefono = this.elements.telefono.value.trim();
+  const indicativo = this.elements.indicativo.value.trim();
+  const numero = this.elements.numero.value.trim();
+  const telefono = numero ? indicativo + ' ' + numero : '';
   const email = this.elements.email.value.trim();
   const feedback = document.getElementById('form-feedback');
 
-  if (!nombre || !telefono || !email) {
+  if (!nombre || !numero || !email) {
     feedback.textContent = 'Por favor completa nombre, teléfono (con indicativo) y correo.';
     return;
   }
