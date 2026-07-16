@@ -326,6 +326,10 @@ img {
   min-width: 0;
 }
 
+.hero__form-oculto {
+  display: none;
+}
+
 .hero__form-note {
   margin: 0;
   font-size: 0.85rem;

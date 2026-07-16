@@ -6,44 +6,13 @@ const SHEET_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzOcA5iAIXkVq
 const form = document.getElementById('inscripcion-form');
 const feedback = document.getElementById('form-feedback');
 
-// Limpia el estado de error de un campo apenas el usuario lo corrige.
-form.querySelectorAll('input, select').forEach(function (campo) {
-  campo.addEventListener('input', function () {
-    campo.classList.remove('input-error');
-  });
-});
-
 form.addEventListener('submit', function (event) {
   event.preventDefault();
 
-  const nombreInput = this.elements.nombre;
-  const numeroInput = this.elements.numero;
-  const emailInput = this.elements.email;
+  const nombre = this.elements.nombre.value.trim();
+  const numero = this.elements.numero.value.trim();
+  const email = this.elements.email.value.trim();
   const indicativo = this.elements.indicativo.value.trim();
-
-  const nombre = nombreInput.value.trim();
-  const numero = numeroInput.value.trim();
-  const email = emailInput.value.trim();
-
-  // No dependemos de la validación nativa del navegador (required/checkValidity):
-  // en navegadores embebidos (Instagram, WhatsApp, TikTok) no siempre se muestra
-  // el aviso nativo, y el usuario se queda sin saber por qué no avanza.
-  const emailInvalido = email !== '' && !emailInput.checkValidity();
-  const camposInvalidos = [];
-  if (!nombre) camposInvalidos.push(nombreInput);
-  if (!numero) camposInvalidos.push(numeroInput);
-  if (!email || emailInvalido) camposInvalidos.push(emailInput);
-
-  if (camposInvalidos.length > 0) {
-    camposInvalidos.forEach(function (campo) {
-      campo.classList.add('input-error');
-    });
-    camposInvalidos[0].focus();
-    feedback.textContent = emailInvalido && nombre && numero
-      ? 'Revisa tu correo, parece que tiene un error.'
-      : 'Por favor completa nombre, teléfono y correo para continuar.';
-    return;
-  }
 
   feedback.textContent = 'Guardando tus datos...';
 
@@ -57,7 +26,7 @@ form.addEventListener('submit', function (event) {
 
   const irAlPago = function () {
     const url = new URL(STRIPE_PAYMENT_LINK);
-    url.searchParams.set('prefilled_email', email);
+    if (email) url.searchParams.set('prefilled_email', email);
     window.location.href = url.toString();
   };
 

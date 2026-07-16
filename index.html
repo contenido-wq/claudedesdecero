@@ -61,9 +61,9 @@
         </p>
 
         <form class="hero__form" id="inscripcion-form" novalidate>
-          <input type="text" name="nombre" placeholder="Nombre" autocomplete="name" required>
-          <div class="hero__form-tel">
-            <select name="indicativo" class="hero__form-indicativo" required aria-label="Indicativo del país">
+          <input class="hero__form-oculto" type="text" name="nombre" placeholder="Nombre" autocomplete="name">
+          <div class="hero__form-tel hero__form-oculto">
+            <select name="indicativo" class="hero__form-indicativo" aria-label="Indicativo del país">
               <option value="+57" selected>🇨🇴 +57</option>
               <option value="+52">🇲🇽 +52</option>
               <option value="+1">🇺🇸 +1</option>
@@ -83,9 +83,9 @@
               <option value="+503">🇸🇻 +503</option>
               <option value="+505">🇳🇮 +505</option>
             </select>
-            <input type="tel" name="numero" placeholder="300 123 4567" autocomplete="tel" required inputmode="numeric">
+            <input type="tel" name="numero" placeholder="300 123 4567" autocomplete="tel" inputmode="numeric">
           </div>
-          <input type="email" name="email" placeholder="Correo electrónico" autocomplete="email" required>
+          <input class="hero__form-oculto" type="email" name="email" placeholder="Correo electrónico" autocomplete="email">
           <button type="submit" class="btn btn--primary">QUIERO MI CUPO</button>
           <p class="hero__form-note" id="form-feedback" aria-live="polite"></p>
         </form>
