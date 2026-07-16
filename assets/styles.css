@@ -230,7 +230,7 @@ img {
 }
 
 .hero__precio-label {
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   letter-spacing: 0.04em;
   color: var(--text-muted);
 }
