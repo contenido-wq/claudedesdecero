@@ -368,10 +368,23 @@ img {
 /* ---------- Secciones genéricas ---------- */
 
 .seccion {
+  position: relative;
   padding: 88px 0;
 }
 
+.seccion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(680px, 84%);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 138, 26, 0.55), transparent);
+}
+
 .seccion__titulo {
+  position: relative;
   text-align: center;
   font-family: var(--font-display);
   font-weight: 800;
@@ -379,6 +392,17 @@ img {
   color: var(--orange-light);
   letter-spacing: 0.02em;
   margin: 0 0 56px;
+}
+
+.seccion__titulo::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin: 18px auto 0;
+  border-radius: 2px;
+  background: var(--gradient-orange);
+  box-shadow: 0 0 16px rgba(255, 106, 26, 0.55);
 }
 
 .hero__micro {
@@ -391,7 +415,9 @@ img {
 /* ---------- Problema / Avatar ---------- */
 
 .problema {
-  background: radial-gradient(ellipse at top left, rgba(255, 106, 26, 0.07) 0%, var(--bg) 55%);
+  background: radial-gradient(ellipse at top left, rgba(255, 138, 26, 0.16) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom right, rgba(255, 77, 26, 0.1) 0%, transparent 50%),
+    var(--bg);
 }
 
 .problema__intro {
@@ -470,8 +496,9 @@ img {
 /* ---------- Oferta / Bonos ---------- */
 
 .oferta {
-  border-top: 1px solid var(--border);
-  background: radial-gradient(ellipse at top right, rgba(255, 106, 26, 0.07) 0%, var(--bg) 55%);
+  background: radial-gradient(ellipse at top right, rgba(255, 138, 26, 0.16) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom left, rgba(255, 77, 26, 0.1) 0%, transparent 50%),
+    var(--bg);
 }
 
 .oferta__grid {
@@ -569,8 +596,8 @@ img {
 /* ---------- FAQ / Objeciones ---------- */
 
 .faq {
-  border-top: 1px solid var(--border);
-  background: radial-gradient(ellipse at top left, rgba(255, 106, 26, 0.06) 0%, var(--bg) 55%);
+  background: radial-gradient(ellipse at top left, rgba(255, 138, 26, 0.14) 0%, transparent 55%),
+    var(--bg);
 }
 
 .faq__lista {
@@ -605,7 +632,8 @@ img {
 /* ---------- Qué vas a aprender / temario ---------- */
 
 .aprender {
-  background: var(--bg-elevated);
+  background: radial-gradient(ellipse at top right, rgba(255, 179, 71, 0.1) 0%, transparent 50%),
+    var(--bg-elevated);
 }
 
 .aprender__subtitulo {
@@ -690,8 +718,8 @@ img {
 /* ---------- Bio ---------- */
 
 .bio {
-  border-top: 1px solid var(--border);
-  background: var(--bg-elevated);
+  background: radial-gradient(ellipse at top left, rgba(255, 179, 71, 0.1) 0%, transparent 50%),
+    var(--bg-elevated);
 }
 
 .bio__grid {
