@@ -220,17 +220,17 @@ img {
 .hero__precio {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   margin: 0 0 20px;
-  padding: 10px 20px;
+  padding: 16px 28px;
   border: 1.5px solid var(--orange);
-  border-radius: 10px;
+  border-radius: 12px;
   background: rgba(255, 106, 26, 0.1);
   box-shadow: 0 0 24px rgba(255, 106, 26, 0.18);
 }
 
 .hero__precio-label {
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   letter-spacing: 0.04em;
   color: var(--text-muted);
 }
@@ -238,7 +238,7 @@ img {
 .hero__precio-monto {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 1.3rem;
+  font-size: 1.9rem;
   color: var(--orange-light);
 }
 
