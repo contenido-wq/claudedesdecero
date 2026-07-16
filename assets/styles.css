@@ -759,28 +759,6 @@ img {
   margin-top: 4px;
 }
 
-/* ---------- CTA final ---------- */
-
-.cta-final {
-  text-align: center;
-  background: radial-gradient(ellipse at center, #1a0f06 0%, var(--bg) 70%);
-  border-top: 1px solid var(--border);
-}
-
-.cta-final__titulo {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: clamp(1.5rem, 3vw, 2.2rem);
-  color: var(--text);
-  margin: 0 0 16px;
-}
-
-.cta-final__texto {
-  color: var(--text-muted);
-  font-size: 1.05rem;
-  margin: 0 0 28px;
-}
-
 /* ---------- Footer ---------- */
 
 .footer {
