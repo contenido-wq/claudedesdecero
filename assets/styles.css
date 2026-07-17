@@ -287,12 +287,6 @@ img {
   box-shadow: 0 0 0 3px rgba(255, 106, 26, 0.2);
 }
 
-.hero__form input.input-error,
-.hero__form-indicativo.input-error {
-  border-color: #ff5c5c;
-  box-shadow: 0 0 0 3px rgba(255, 92, 92, 0.2);
-}
-
 .hero__form-tel {
   display: flex;
   gap: 8px;
@@ -330,12 +324,6 @@ img {
   display: none;
 }
 
-.hero__form-note {
-  margin: 0;
-  font-size: 0.85rem;
-  min-height: 1.2em;
-  color: var(--orange-light);
-}
 
 .hero__photo {
   position: absolute;
