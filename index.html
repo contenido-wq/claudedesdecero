@@ -9,118 +9,236 @@
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="theme/styles.css">
 </head>
 <body>
 
-<!-- =========================================================
-     HERO / FORMULARIO DE INSCRIPCIÓN
-     Edita aquí: título del evento, fecha/hora, headline
-========================================================== -->
-<header class="hero">
-  <div class="hero__glow hero__glow--1"></div>
-  <div class="hero__glow hero__glow--2"></div>
+<!-- HERO / FORMULARIO DE INSCRIPCIÓN -->
+<header class="hero hero--full">
+  <img class="hero__photo" src="l/claude-desde-cero/img/hero.jpg" alt="Jhei Trujillo">
+  <div class="hero__scrim"></div>
+
+  <nav class="navbar navbar--overlay">
+    <a href="#" class="navbar__brand">
+      <svg class="navbar__mark" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span>Taller de <strong>Claude</strong></span>
+    </a>
+    <ul class="navbar__links">
+      <li><a href="#problema">El problema</a></li>
+      <li><a href="#aprender">Qué aprenderás</a></li>
+      <li><a href="#oferta">Qué incluye</a></li>
+      <li><a href="#faq">Preguntas</a></li>
+    </ul>
+    <a href="https://buy.stripe.com/6oU3cvetw4xm4fpcD54gg0B" class="navbar__cta">
+      <span>Quiero mi cupo</span>
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </nav>
 
   <div class="container">
 
-    <div class="hero__banner">
-      <img class="hero__photo" src="assets/img/presentador.jpg" alt="Jhei Trujillo">
-      <div class="hero__scrim"></div>
+    <div class="hero__content">
+      <p class="kicker">
+        <span class="kicker__dot"></span>
+        TALLER EN VIVO
+      </p>
 
-      <div class="hero__content">
-        <p class="kicker">
-          <span class="kicker__dot"></span>
-          TALLER EN VIVO
-        </p>
+      <h1 class="hero__title">
+        APRENDE CLAUDE
+        <span class="hero__title-accent">DESDE CERO</span>
+      </h1>
 
-        <h1 class="hero__title">
-          APRENDE CLAUDE
-          <span class="hero__title-accent">DESDE CERO</span>
-        </h1>
-        <p class="hero__edition">1ª EDICIÓN · 2026</p>
+      <p class="hero__headline">Para <strong>emprendedores y dueños de negocio</strong>: instala y configura Claude desde cero para trabajar con él profesionalmente en tu día a día, sin saber programar.</p>
 
-        <p class="hero__headline">
-          Instala y configura <strong>Claude</strong> desde cero para trabajar con él
-          profesionalmente en cualquier tarea de tu negocio, sin saber programar.
-        </p>
+      <ul class="hero__badges">
+        
+        <li class="hero__badge">
+          <span class="hero__badge-icono">
+            
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2.5" y="6" width="13" height="12" rx="2" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M15.5 10.5 21 7.5v9l-5.5-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+            
+          </span>
+          <span class="hero__badge-texto">Taller en vivo</span>
+        </li>
+        
+        <li class="hero__badge">
+          <span class="hero__badge-icono">
+            
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M10 8.5v7l6-3.5Z" fill="currentColor"/>
+            </svg>
+            
+          </span>
+          <span class="hero__badge-texto">Grabación incluida</span>
+        </li>
+        
+        <li class="hero__badge">
+          <span class="hero__badge-icono">
+            
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 20V10M11 20V4M18 20v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            
+          </span>
+          <span class="hero__badge-texto">Desde cero</span>
+        </li>
+        
+      </ul>
 
-        <div class="hero__precio">
+      <p class="hero__date">
+        <svg class="hero__date-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M3 9.5H21" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M8 3V6.5M16 3V6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span>Día <strong>25 de julio</strong> de <strong>9:00 AM a 12:00 PM (COL)</strong> en vivo por Zoom</span>
+      </p>
+
+      <div class="hero__oferta">
+      <div class="hero__precio">
+        <div class="hero__precio-monto-bloque">
           <span class="hero__precio-label">Inversión del taller</span>
-          <span class="hero__precio-monto">$97 dólares</span>
+          <span class="hero__precio-monto">$57 dólares</span>
         </div>
-
-        <p class="hero__date">
-          <svg class="hero__date-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/>
-            <path d="M3 9.5H21" stroke="currentColor" stroke-width="1.8"/>
-            <path d="M8 3V6.5M16 3V6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          </svg>
-          <span>Día <strong>25 de julio</strong> de <strong>9:00 AM a 12:00 PM (COL)</strong> en vivo por Zoom</span>
-        </p>
-
-        <form class="hero__form" id="inscripcion-form" novalidate>
-          <input class="hero__form-oculto" type="text" name="nombre" placeholder="Nombre" autocomplete="name">
-          <div class="hero__form-tel hero__form-oculto">
-            <select name="indicativo" class="hero__form-indicativo" aria-label="Indicativo del país">
-              <option value="+57" selected>🇨🇴 +57</option>
-              <option value="+52">🇲🇽 +52</option>
-              <option value="+1">🇺🇸 +1</option>
-              <option value="+54">🇦🇷 +54</option>
-              <option value="+56">🇨🇱 +56</option>
-              <option value="+51">🇵🇪 +51</option>
-              <option value="+593">🇪🇨 +593</option>
-              <option value="+34">🇪🇸 +34</option>
-              <option value="+58">🇻🇪 +58</option>
-              <option value="+507">🇵🇦 +507</option>
-              <option value="+506">🇨🇷 +506</option>
-              <option value="+502">🇬🇹 +502</option>
-              <option value="+591">🇧🇴 +591</option>
-              <option value="+595">🇵🇾 +595</option>
-              <option value="+598">🇺🇾 +598</option>
-              <option value="+504">🇭🇳 +504</option>
-              <option value="+503">🇸🇻 +503</option>
-              <option value="+505">🇳🇮 +505</option>
-            </select>
-            <input type="tel" name="numero" placeholder="300 123 4567" autocomplete="tel" inputmode="numeric">
-          </div>
-          <input class="hero__form-oculto" type="email" name="email" placeholder="Correo electrónico" autocomplete="email">
-          <button type="submit" class="btn btn--primary btn--destello">QUIERO MI CUPO</button>
-        </form>
-        <p class="hero__micro">Cupos limitados · Taller en vivo con grabación incluida · Pago de contado</p>
+        
+        <ul class="hero__precio-checklist">
+          
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M8 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Taller en vivo por Zoom</span>
+          </li>
+          
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M8 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Grabación incluida</span>
+          </li>
+          
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M8 12.5l2.5 2.5L16.5 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Material de apoyo</span>
+          </li>
+          
+        </ul>
+        
       </div>
 
-      <div class="hero__caption">
-        <p class="hero__signature">Jhei Trujillo</p>
+      <form class="hero__form" id="inscripcion-form"
+            data-mode="checkout"
+            data-checkout-url="https://buy.stripe.com/6oU3cvetw4xm4fpcD54gg0B"
+            
+            novalidate>
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input class="hero__form-oculto" type="text" name="nombre" placeholder="Nombre" autocomplete="name" >
+        <div class="hero__form-tel hero__form-oculto">
+          <select name="indicativo" class="hero__form-indicativo" aria-label="Indicativo del país">
+            <option value="+57" selected>🇨🇴 +57</option>
+            <option value="+52">🇲🇽 +52</option>
+            <option value="+1">🇺🇸 +1</option>
+            <option value="+54">🇦🇷 +54</option>
+            <option value="+56">🇨🇱 +56</option>
+            <option value="+51">🇵🇪 +51</option>
+            <option value="+593">🇪🇨 +593</option>
+            <option value="+34">🇪🇸 +34</option>
+            <option value="+58">🇻🇪 +58</option>
+            <option value="+507">🇵🇦 +507</option>
+            <option value="+506">🇨🇷 +506</option>
+            <option value="+502">🇬🇹 +502</option>
+            <option value="+591">🇧🇴 +591</option>
+            <option value="+595">🇵🇾 +595</option>
+            <option value="+598">🇺🇾 +598</option>
+            <option value="+504">🇭🇳 +504</option>
+            <option value="+503">🇸🇻 +503</option>
+            <option value="+505">🇳🇮 +505</option>
+          </select>
+          <input type="tel" name="numero" placeholder="300 123 4567" autocomplete="tel" inputmode="numeric">
+        </div>
+        <input class="hero__form-oculto" type="email" name="email" placeholder="Correo electrónico" autocomplete="email" >
+        <button type="submit" class="btn btn--primary btn--pill btn--centrado btn--destello">
+          <span>QUIERO MI CUPO</span>
+          <span class="btn__circle">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+      </form>
       </div>
+
+      
+      <ul class="hero__confianza">
+        
+        <li class="hero__confianza-item">
+          <span class="hero__confianza-icono" aria-hidden="true">
+            
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+            
+          </span>
+          <span>
+            <span class="hero__confianza-titulo">Pago seguro</span>
+            <span class="hero__confianza-texto">Con tarjeta o PayPal</span>
+          </span>
+        </li>
+        
+        <li class="hero__confianza-item">
+          <span class="hero__confianza-icono" aria-hidden="true">
+            
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M16 4.5c1.7.4 3 2 3 3.9 0 1.9-1.3 3.4-3 3.9M20 20c0-2.8-1.9-5.1-4.5-5.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            
+          </span>
+          <span>
+            <span class="hero__confianza-titulo">Cupos limitados</span>
+            <span class="hero__confianza-texto">Para mejor experiencia</span>
+          </span>
+        </li>
+        
+      </ul>
+      
     </div>
 
   </div>
 </header>
 
-<!-- =========================================================
-     EL PROBLEMA / EL AVATAR
-     Antes vs. Después de configurar Claude correctamente
-========================================================== -->
-<section class="seccion problema" id="problema">
+<!-- EL PROBLEMA / EL AVATAR -->
+<section class="seccion problema problema--bento" id="problema" style="background-image: linear-gradient(180deg, rgba(8, 6, 4, 0.45) 0%, rgba(8, 6, 4, 0.6) 100%), url('l/claude-desde-cero/img/problema-fondo.jpg')">
   <div class="container">
-    <h2 class="seccion__titulo">¿TE HA PASADO ESTO CON CLAUDE?</h2>
-    <p class="problema__intro">
-      El 66% de los profesionales y emprendedores en LATAM siente que si no aprende a usar IA
-      ahora, se va a quedar atrás. El problema no es la falta de ganas: es que casi nadie sabe
-      por dónde empezar ni cómo configurarla bien.
-    </p>
+    <p class="seccion__kicker">TRABAJA INTELIGENTE CON IA</p>
+    <h2 class="seccion__titulo">
+      ¿TE HA PASADO ESTO CON
+      <span class="seccion__titulo-acento">CLAUDE?</span>
+    </h2>
+    <p class="problema__intro">El 66% de los profesionales y emprendedores en LATAM siente que si no aprende a usar IA ahora, se va a quedar atrás. El problema no es la falta de ganas: es que casi nadie sabe por dónde empezar ni cómo configurarla bien.</p>
 
     <div class="antes-despues">
       <article class="antes-despues__col antes-despues__col--antes">
         <p class="antes-despues__etiqueta">ANTES</p>
+        <p class="antes-despues__sub">FRUSTRACIÓN Y TIEMPO PERDIDO</p>
         <ul class="antes-despues__lista">
-          <li>Sabes que Claude existe. Lo has abierto una o dos veces.</li>
-          <li>Le escribiste algo genérico, te dio una respuesta genérica y lo cerraste pensando "esto no es para mí".</li>
-          <li>No tienes nada configurado. Cada vez que lo abres, empiezas desde cero.</li>
-          <li>No sabes qué son los proyectos, los skills ni la memoria.</li>
-          <li>Ves a otros usarlo como una herramienta poderosa y no entiendes por qué a ti no te funciona igual.</li>
+          <li>Sabes que Claude existe. Lo has abierto una o dos veces.</li><li>Le escribiste algo genérico, te dio una respuesta genérica y lo cerraste pensando &quot;esto no es para mí&quot;.</li><li>No tienes nada configurado. Cada vez que lo abres, empiezas desde cero.</li><li>No sabes qué son los proyectos, los skills ni la memoria.</li><li>Ves a otros usarlo como una herramienta poderosa y no entiendes por qué a ti no te funciona igual.</li>
         </ul>
       </article>
 
@@ -128,12 +246,9 @@
 
       <article class="antes-despues__col antes-despues__col--despues">
         <p class="antes-despues__etiqueta antes-despues__etiqueta--despues">DESPUÉS</p>
+        <p class="antes-despues__sub antes-despues__sub--despues">CLARIDAD, CONTROL Y RESULTADOS</p>
         <ul class="antes-despues__lista">
-          <li>Tienes Claude completamente instalado y configurado para tu negocio específico.</li>
-          <li>La memoria guarda tu contexto: no tienes que repetirle quién eres ni qué haces.</li>
-          <li>Tus proyectos están organizados y tus prompts base listos.</li>
-          <li>Tus conectores con Gmail y Drive están activos.</li>
-          <li>Abres Claude y en minutos resuelves lo que antes te tomaba horas.</li>
+          <li>Tienes a Claude configurado y lo usas todos los días con un sistema claro.</li><li>Escribes prompts claros que te dan respuestas útiles desde el primer intento.</li><li>Tienes orden, contexto y continuidad: cada vez que abres Claude, sigues donde ibas.</li><li>Entiendes cómo funcionan los proyectos, los skills y la memoria — y los usas a tu favor.</li><li>Ahora eres tú quien le saca provecho, con un sistema que puedes repetir en cualquier tarea de tu negocio.</li>
         </ul>
       </article>
     </div>
@@ -142,226 +257,359 @@
   </div>
 </section>
 
-<!-- =========================================================
-     QUÉ VAS A APRENDER / TEMARIO
-     Edita aquí: los 5 bloques del taller de 3 horas (hora de inicio en hero__date)
-========================================================== -->
-<section class="seccion aprender">
+<!-- QUÉ VAS A APRENDER / TEMARIO -->
+<section class="seccion aprender aprender--bento" id="aprender" style="background-image: linear-gradient(180deg, rgba(10, 8, 6, 0.55) 0%, rgba(10, 8, 6, 0.75) 100%), url('l/claude-desde-cero/img/faq-fondo.jpg')">
   <div class="container">
-    <h2 class="seccion__titulo">¿QUÉ VAS A APRENDER EN ESTE TALLER?</h2>
+    <p class="seccion__kicker">UN APRENDIZAJE PASO A PASO</p>
+    <h2 class="seccion__titulo">
+      ¿QUÉ VAS A APRENDER
+      <span class="seccion__titulo-acento">EN ESTE TALLER?</span>
+    </h2>
     <p class="aprender__subtitulo">3 horas en vivo. De cero a tu primer agente de IA funcionando.</p>
 
-    <div class="temario">
-
+    <div class="temario temario--bento">
+      
+      
       <article class="temario__item">
         <div class="temario__marcador"><span class="temario__numero">01</span></div>
         <div class="temario__contenido">
+          <div class="temario__icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              
+            </svg>
+          </div>
           <h3 class="temario__titulo">Instala y configura Claude correctamente</h3>
-          <p class="temario__texto">
-            Vas a dejar Claude instalado y bien configurado en tu computador, sin pasos de más
-            ni errores comunes, listo para usarlo desde el primer minuto en tu negocio.
-          </p>
+          <p class="temario__texto">Vas a dejar Claude instalado y bien configurado en tu computador, sin pasos de más ni errores comunes, listo para usarlo desde el primer minuto en tu negocio.</p>
         </div>
       </article>
-
+      
+      
       <article class="temario__item">
         <div class="temario__marcador"><span class="temario__numero">02</span></div>
         <div class="temario__contenido">
+          <div class="temario__icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              
+            </svg>
+          </div>
           <h3 class="temario__titulo">Cómo usar Claude como un profesional</h3>
-          <p class="temario__texto">
-            Aprende a darle instrucciones claras a Claude para que te entregue respuestas
-            útiles a la primera, sin perder tiempo reescribiendo lo mismo una y otra vez.
-          </p>
+          <p class="temario__texto">Aprende a darle instrucciones claras a Claude para que te entregue respuestas útiles a la primera, sin perder tiempo reescribiendo lo mismo una y otra vez.</p>
         </div>
       </article>
-
+      
+      
       <article class="temario__item">
         <div class="temario__marcador"><span class="temario__numero">03</span></div>
         <div class="temario__contenido">
+          <div class="temario__icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              
+              <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              
+            </svg>
+          </div>
           <h3 class="temario__titulo">Claude Cowork y Claude Code</h3>
-          <p class="temario__texto">
-            Conoce las dos herramientas con las que los profesionales trabajan con Claude todos
-            los días: Cowork para las tareas de tu negocio y Code para automatizar procesos.
-          </p>
+          <p class="temario__texto">Conoce las dos herramientas con las que los profesionales trabajan con Claude todos los días: Cowork para las tareas de tu negocio y Code para automatizar procesos.</p>
         </div>
       </article>
-
+      
+      
       <article class="temario__item">
         <div class="temario__marcador"><span class="temario__numero">04</span></div>
         <div class="temario__contenido">
+          <div class="temario__icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              
+              <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              
+            </svg>
+          </div>
           <h3 class="temario__titulo">Potencia a Claude con Skills</h3>
-          <p class="temario__texto">
-            Instala Skills que le enseñan a Claude a resolver tareas específicas de tu negocio,
-            para que trabaje exactamente como tú lo necesitas, no de forma genérica.
-          </p>
+          <p class="temario__texto">Instala Skills que le enseñan a Claude a resolver tareas específicas de tu negocio, para que trabaje exactamente como tú lo necesitas, no de forma genérica.</p>
         </div>
       </article>
-
-      <article class="temario__item temario__item--ultimo">
+      
+      
+      <article class="temario__item">
         <div class="temario__marcador"><span class="temario__numero">05</span></div>
         <div class="temario__contenido">
+          <div class="temario__icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              
+              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              
+            </svg>
+          </div>
           <h3 class="temario__titulo">Crea tu primer agente</h3>
-          <p class="temario__texto">
-            Sales del taller con tu primer agente de IA funcionando: una tarea de tu negocio que
-            antes hacías tú a mano, ahora resuelta automáticamente por Claude.
-          </p>
+          <p class="temario__texto">Sales del taller con tu primer agente de IA funcionando: una tarea de tu negocio que antes hacías tú a mano, ahora resuelta automáticamente por Claude.</p>
         </div>
       </article>
-
+      
     </div>
+
+    
+    <p class="aprender__badge">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" fill="currentColor"/>
+      </svg>
+      <span>De cero a tu primer agente funcionando.</span>
+    </p>
+    
+
+    <p class="seccion__kicker seccion__kicker--pie">MISMAS HERRAMIENTAS. UN NUEVO NIVEL PARA TU NEGOCIO.</p>
   </div>
 </section>
 
-<!-- =========================================================
-     OFERTA / BONOS
-     Edita aquí: precio, bonos y condiciones de la inscripción
-========================================================== -->
-<section class="seccion oferta" id="oferta">
+<!-- OFERTA / BONOS -->
+<section class="seccion oferta oferta--bento" id="oferta" style="background-image: linear-gradient(180deg, rgba(8, 6, 4, 0.55) 0%, rgba(8, 6, 4, 0.7) 100%), url('l/claude-desde-cero/img/oferta-fondo.jpg')">
   <div class="container">
-    <h2 class="seccion__titulo">TODO LO QUE RECIBES HOY</h2>
+    <h2 class="seccion__titulo">
+      TODO LO QUE
+      <span class="seccion__titulo-acento">RECIBES HOY</span>
+    </h2>
 
     <div class="oferta__grid">
       <ul class="oferta__checklist">
+        
+        
         <li>
-          <span class="oferta__bullet" aria-hidden="true"></span>
-          <p><strong>Biblioteca de Prompts Listos:</strong> 50 prompts probados para los casos de uso
-            más frecuentes en negocios de LATAM, listos para copiar, pegar y adaptar. Nunca más
-            empiezas desde la pantalla en blanco.</p>
+          <span class="oferta__bullet" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              
+              <path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M14 3v5h5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M9 13h6M9 17h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              
+            </svg>
+          </span>
+          <p><strong>Biblioteca de Prompts Listos:</strong> 50 prompts probados para los casos de uso más frecuentes en negocios de LATAM, listos para copiar, pegar y adaptar. Nunca más empiezas desde la pantalla en blanco.</p>
         </li>
+        
+        
         <li>
-          <span class="oferta__bullet" aria-hidden="true"></span>
-          <p><strong>Plantilla de Configuración Completa:</strong> la plantilla exacta que usa Jhei
-            para configurar Claude en sus proyectos, con instrucciones de memoria, skills y
-            conectores ya escritos. Solo rellenas tus datos.</p>
+          <span class="oferta__bullet" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              
+              <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              
+            </svg>
+          </span>
+          <p><strong>Plantilla de Configuración Completa:</strong> la plantilla exacta que usa Jhei para configurar Claude en sus proyectos, con instrucciones de memoria, skills y conectores ya escritos. Solo rellenas tus datos.</p>
         </li>
+        
+        
         <li>
-          <span class="oferta__bullet" aria-hidden="true"></span>
-          <p><strong>Grabación del taller:</strong> la grabación completa del taller, disponible por
-            mínimo 3 meses para repasar tu configuración cuando la necesites. Si Claude lanza
-            cambios importantes, se actualiza el material.</p>
+          <span class="oferta__bullet" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              
+              <path d="M15 8.5 21 6v12l-6-2.5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <rect x="3" y="6" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.8"/>
+              
+            </svg>
+          </span>
+          <p><strong>Grabación del taller:</strong> la grabación completa del taller, disponible por mínimo 3 meses para repasar tu configuración cuando la necesites. Si Claude lanza cambios importantes, se actualiza el material.</p>
         </li>
+        
       </ul>
 
       <div class="oferta__resumen">
         <p class="oferta__valor-total">Valor total de los bonos: <s>$341 USD</s></p>
         <p class="oferta__precio-label">Hoy inviertes solo:</p>
-        <p class="oferta__precio-monto">$97 USD</p>
-        <p class="oferta__condiciones">
-          Taller en vivo con grabación incluida · Cupos limitados · Pago de contado
-        </p>
+        <p class="oferta__precio-monto">$57 USD</p>
+        <p class="oferta__condiciones">Taller en vivo con grabación incluida · Cupos limitados · Pago de contado</p>
         <a href="https://buy.stripe.com/6oU3cvetw4xm4fpcD54gg0B" class="btn btn--primary btn--inline">QUIERO MI CUPO</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- =========================================================
-     BIO DEL PRESENTADOR
-     Edita aquí: historia y credenciales
-========================================================== -->
-<section class="seccion bio">
-  <div class="container bio__grid">
-
-    <div class="bio__media">
-      <img class="bio__photo" src="assets/img/presentador-bio.jpg" alt="Jhei Trujillo">
-      <div class="bio__sello">
-        <span class="bio__sello-inicial">JT</span>
-        <span class="bio__sello-firma">Jhei Trujillo</span>
-      </div>
-    </div>
-
-    <div class="bio__content">
-      <h2 class="bio__nombre">JHEI TRUJILLO — IA GROWTH STRATEGIST</h2>
-      <p class="bio__texto">
-        Soy el fundador de AIVI, la plataforma de IA en español más grande para emprendedores
-        hispanos. Llevo más de 8 años en estrategia de contenido viral y crecimiento digital.
-        Construí y operé una agencia real en LATAM antes de convertir mi metodología en tecnología.
-      </p>
-      <p class="bio__texto">
-        No enseño teoría — te muestro lo que funciona en pantalla, con negocios reales y números
-        reales. Mi misión es que tú también domines la IA, sin importar tu nivel técnico.
-      </p>
-
-      <div class="bio__stats">
-        <div class="bio__stat">
-          <span class="bio__stat-numero">8+</span>
-          <span class="bio__stat-label">años de experiencia</span>
-        </div>
-        <div class="bio__stat">
-          <span class="bio__stat-numero">5,500+</span>
-          <span class="bio__stat-label">estudiantes formados</span>
-        </div>
-        <div class="bio__stat">
-          <span class="bio__stat-numero">700+</span>
-          <span class="bio__stat-label">negocios asesorados</span>
-        </div>
-      </div>
-
-      <a href="https://buy.stripe.com/6oU3cvetw4xm4fpcD54gg0B" class="btn btn--primary btn--inline">QUIERO MI CUPO</a>
-    </div>
-
+<!-- BIO DEL PRESENTADOR -->
+<section class="seccion bio bio--imagen">
+  <div class="container">
+    <img class="bio__imagen" src="l/claude-desde-cero/img/mi-historia.jpg" alt="JHEI TRUJILLO — IA GROWTH STRATEGIST. Antes de enseñar IA, la construí en el mundo real.">
+    <a href="https://buy.stripe.com/6oU3cvetw4xm4fpcD54gg0B" class="btn btn--primary btn--inline bio__cta">QUIERO MI CUPO</a>
   </div>
 </section>
 
-<!-- =========================================================
-     PREGUNTAS FRECUENTES / OBJECIONES
-     Edita aquí: dudas más comunes de tu audiencia
-========================================================== -->
-<section class="seccion faq" id="faq">
+<!-- PREGUNTAS FRECUENTES / OBJECIONES -->
+<section class="seccion faq faq--bento" id="faq" style="background-image: linear-gradient(180deg, rgba(10, 8, 6, 0.55) 0%, rgba(10, 8, 6, 0.75) 100%), url('l/claude-desde-cero/img/faq-fondo.jpg')">
   <div class="container">
-    <h2 class="seccion__titulo">¿AÚN TIENES DUDAS?</h2>
+    <p class="seccion__kicker">PREGUNTAS FRECUENTES</p>
+    <h2 class="seccion__titulo">
+      ¿AÚN TIENES
+      <span class="seccion__titulo-acento">DUDAS?</span>
+    </h2>
+    <p class="faq__subtitulo">Aquí respondemos las preguntas más comunes sobre el taller.</p>
 
     <div class="faq__lista">
-
+      
+      
       <article class="faq__item">
-        <h3 class="faq__pregunta">"No sé nada de IA ni de tecnología"</h3>
-        <p class="faq__respuesta">Este taller empieza desde cero. Si sabes abrir una app en tu teléfono, puedes hacer esto.</p>
+        <span class="faq__icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+            <circle cx="12" cy="8" r="3.2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            
+          </svg>
+        </span>
+        <span class="faq__texto">
+          <h3 class="faq__pregunta">&quot;No sé nada de IA ni de tecnología&quot;</h3>
+          <p class="faq__respuesta">Este taller empieza desde cero. Si sabes abrir una app en tu teléfono, puedes hacer esto.</p>
+        </span>
+        <span class="faq__toggle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
       </article>
-
+      
+      
       <article class="faq__item">
-        <h3 class="faq__pregunta">"Ya uso ChatGPT y me funciona"</h3>
-        <p class="faq__respuesta">ChatGPT y Claude no son lo mismo. Claude tiene memoria, proyectos y conectores que ChatGPT no tiene. En este taller vas a ver la diferencia en vivo.</p>
+        <span class="faq__icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+            <path d="M4 5h16v11H9l-4 4V5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            
+          </svg>
+        </span>
+        <span class="faq__texto">
+          <h3 class="faq__pregunta">&quot;Ya uso ChatGPT y me funciona&quot;</h3>
+          <p class="faq__respuesta">ChatGPT y Claude no son lo mismo. Claude tiene memoria, proyectos y conectores que ChatGPT no tiene. En este taller vas a ver la diferencia en vivo.</p>
+        </span>
+        <span class="faq__toggle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
       </article>
-
+      
+      
       <article class="faq__item">
-        <h3 class="faq__pregunta">"No tengo tiempo para aprender algo nuevo"</h3>
-        <p class="faq__respuesta">El taller es una sola sesión. En menos de 3 horas tienes Claude configurado y funcionando. No es un curso de semanas.</p>
+        <span class="faq__icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+            <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            
+          </svg>
+        </span>
+        <span class="faq__texto">
+          <h3 class="faq__pregunta">&quot;No tengo tiempo para aprender algo nuevo&quot;</h3>
+          <p class="faq__respuesta">El taller es una sola sesión. En menos de 3 horas tienes Claude configurado y funcionando. No es un curso de semanas.</p>
+        </span>
+        <span class="faq__toggle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
       </article>
-
+      
+      
       <article class="faq__item">
-        <h3 class="faq__pregunta">"Ya intenté usar Claude y no me funcionó"</h3>
-        <p class="faq__respuesta">Lo usaste mal, como el 90% que lo abre sin configurarlo. Este taller existe exactamente para eso.</p>
+        <span class="faq__icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            
+          </svg>
+        </span>
+        <span class="faq__texto">
+          <h3 class="faq__pregunta">&quot;Ya intenté usar Claude y no me funcionó&quot;</h3>
+          <p class="faq__respuesta">Lo usaste mal, como el 90% que lo abre sin configurarlo. Este taller existe exactamente para eso.</p>
+        </span>
+        <span class="faq__toggle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
       </article>
-
+      
+      
       <article class="faq__item">
-        <h3 class="faq__pregunta">"Es muy caro para un taller"</h3>
-        <p class="faq__respuesta">Lo que gastas en este taller te lo devuelve la primera semana de trabajo con Claude configurado. El tiempo que ahorras vale más.</p>
+        <span class="faq__icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+            <circle cx="8.5" cy="9" r="4" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="15" cy="14.5" r="4" stroke="currentColor" stroke-width="1.8"/>
+            
+          </svg>
+        </span>
+        <span class="faq__texto">
+          <h3 class="faq__pregunta">&quot;Es muy caro para un taller&quot;</h3>
+          <p class="faq__respuesta">Lo que gastas en este taller te lo devuelve la primera semana de trabajo con Claude configurado. El tiempo que ahorras vale más.</p>
+        </span>
+        <span class="faq__toggle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
       </article>
-
+      
+      
       <article class="faq__item">
-        <h3 class="faq__pregunta">"¿Y si no puedo asistir en vivo?"</h3>
-        <p class="faq__respuesta">La grabación queda disponible para que la veas cuando puedas.</p>
+        <span class="faq__icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M10 8.5v7l6-3.5Z" fill="currentColor"/>
+            
+          </svg>
+        </span>
+        <span class="faq__texto">
+          <h3 class="faq__pregunta">&quot;¿Y si no puedo asistir en vivo?&quot;</h3>
+          <p class="faq__respuesta">La grabación queda disponible para que la veas cuando puedas.</p>
+        </span>
+        <span class="faq__toggle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
       </article>
-
+      
+      
       <article class="faq__item">
-        <h3 class="faq__pregunta">"¿Esto funciona para mi tipo de negocio?"</h3>
-        <p class="faq__respuesta">Si tu negocio necesita comunicarse, crear contenido, responder clientes o analizar información, Claude funciona para ti.</p>
+        <span class="faq__icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+            <circle cx="12" cy="8" r="3.2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            
+          </svg>
+        </span>
+        <span class="faq__texto">
+          <h3 class="faq__pregunta">&quot;¿Esto funciona para mi tipo de negocio?&quot;</h3>
+          <p class="faq__respuesta">Si tu negocio necesita comunicarse, crear contenido, responder clientes o analizar información, Claude funciona para ti.</p>
+        </span>
+        <span class="faq__toggle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
       </article>
-
+      
     </div>
   </div>
 </section>
 
-<!-- =========================================================
-     FOOTER
-========================================================== -->
+<!-- FOOTER -->
 <footer class="footer">
   <p>TODOS LOS DERECHOS RESERVADOS® · AIVI</p>
 </footer>
 
-<!-- =========================================================
-     BOTÓN FLOTANTE DE WHATSAPP
-========================================================== -->
+<!-- BOTÓN FLOTANTE DE WHATSAPP -->
+
 <a
   class="whatsapp-float"
   href="https://go.aivinetwork.com/soporte-taller-claude-basico"
@@ -374,6 +622,7 @@
   </svg>
 </a>
 
-<script src="assets/main.js"></script>
+
+<script src="theme/main.js"></script>
 </body>
 </html>
