@@ -11,13 +11,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="theme/styles.css">
+<link rel="stylesheet" href="/theme/styles.css">
 </head>
 <body>
 
 <!-- HERO / FORMULARIO DE INSCRIPCIÓN -->
 <header class="hero hero--full">
-  <img class="hero__photo" src="l/claude-desde-cero/img/hero.jpg" alt="Jhei Trujillo">
+  <img class="hero__photo" src="/l/claude-desde-cero/img/hero.jpg" alt="Jhei Trujillo">
   <div class="hero__scrim"></div>
 
   <nav class="navbar navbar--overlay">
@@ -33,7 +33,7 @@
       <li><a href="#oferta">Qué incluye</a></li>
       <li><a href="#faq">Preguntas</a></li>
     </ul>
-    <a href="https://buy.stripe.com/6oU3cvetw4xm4fpcD54gg0B" class="navbar__cta">
+    <a href="https://buy.stripe.com/6oU3cvetw4xm4fpcD54gg0B" class="navbar__cta" data-abrir-pago>
       <span>Quiero mi cupo</span>
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -101,7 +101,7 @@
           <path d="M3 9.5H21" stroke="currentColor" stroke-width="1.8"/>
           <path d="M8 3V6.5M16 3V6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
         </svg>
-        <span>Día <strong>25 de julio</strong> de <strong>9:00 AM a 12:00 PM (COL)</strong> en vivo por Zoom</span>
+        <span>Día <strong>01 de octubre</strong> a las <strong>7:00 PM (hora Colombia)</strong> en vivo por Zoom · <strong>Cupos limitados</strong></span>
       </p>
 
       <div class="hero__oferta">
@@ -143,7 +143,7 @@
 
       <form class="hero__form" id="inscripcion-form"
             data-mode="checkout"
-            data-checkout-url="https://buy.stripe.com/6oU3cvetw4xm4fpcD54gg0B"
+            data-checkout-url="https://buy.stripe.com/6oU3cvetw4xm4fpcD54gg0B" data-abrir-pago
             
             novalidate>
         <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -224,7 +224,7 @@
 </header>
 
 <!-- EL PROBLEMA / EL AVATAR -->
-<section class="seccion problema problema--bento" id="problema" style="background-image: linear-gradient(180deg, rgba(8, 6, 4, 0.45) 0%, rgba(8, 6, 4, 0.6) 100%), url('l/claude-desde-cero/img/problema-fondo.jpg')">
+<section class="seccion problema problema--bento" id="problema" style="background-image: linear-gradient(180deg, rgba(8, 6, 4, 0.45) 0%, rgba(8, 6, 4, 0.6) 100%), url('/l/claude-desde-cero/img/problema-fondo.jpg')">
   <div class="container">
     <p class="seccion__kicker">TRABAJA INTELIGENTE CON IA</p>
     <h2 class="seccion__titulo">
@@ -258,7 +258,7 @@
 </section>
 
 <!-- QUÉ VAS A APRENDER / TEMARIO -->
-<section class="seccion aprender aprender--bento" id="aprender" style="background-image: linear-gradient(180deg, rgba(10, 8, 6, 0.55) 0%, rgba(10, 8, 6, 0.75) 100%), url('l/claude-desde-cero/img/faq-fondo.jpg')">
+<section class="seccion aprender aprender--bento" id="aprender" style="background-image: linear-gradient(180deg, rgba(10, 8, 6, 0.55) 0%, rgba(10, 8, 6, 0.75) 100%), url('/l/claude-desde-cero/img/faq-fondo.jpg')">
   <div class="container">
     <p class="seccion__kicker">UN APRENDIZAJE PASO A PASO</p>
     <h2 class="seccion__titulo">
@@ -370,7 +370,7 @@
 </section>
 
 <!-- OFERTA / BONOS -->
-<section class="seccion oferta oferta--bento" id="oferta" style="background-image: linear-gradient(180deg, rgba(8, 6, 4, 0.55) 0%, rgba(8, 6, 4, 0.7) 100%), url('l/claude-desde-cero/img/oferta-fondo.jpg')">
+<section class="seccion oferta oferta--bento" id="oferta" style="background-image: linear-gradient(180deg, rgba(8, 6, 4, 0.55) 0%, rgba(8, 6, 4, 0.7) 100%), url('/l/claude-desde-cero/img/oferta-fondo.jpg')">
   <div class="container">
     <h2 class="seccion__titulo">
       TODO LO QUE
@@ -427,7 +427,7 @@
         <p class="oferta__precio-label">Hoy inviertes solo:</p>
         <p class="oferta__precio-monto">$57 USD</p>
         <p class="oferta__condiciones">Taller en vivo con grabación incluida · Cupos limitados · Pago de contado</p>
-        <a href="https://buy.stripe.com/6oU3cvetw4xm4fpcD54gg0B" class="btn btn--primary btn--inline">QUIERO MI CUPO</a>
+        <a href="https://buy.stripe.com/6oU3cvetw4xm4fpcD54gg0B" class="btn btn--primary btn--inline" data-abrir-pago>QUIERO MI CUPO</a>
       </div>
     </div>
   </div>
@@ -436,13 +436,13 @@
 <!-- BIO DEL PRESENTADOR -->
 <section class="seccion bio bio--imagen">
   <div class="container">
-    <img class="bio__imagen" src="l/claude-desde-cero/img/mi-historia.jpg" alt="JHEI TRUJILLO — IA GROWTH STRATEGIST. Antes de enseñar IA, la construí en el mundo real.">
-    <a href="https://buy.stripe.com/6oU3cvetw4xm4fpcD54gg0B" class="btn btn--primary btn--inline bio__cta">QUIERO MI CUPO</a>
+    <img class="bio__imagen" src="/l/claude-desde-cero/img/mi-historia.jpg" alt="JHEI TRUJILLO — IA GROWTH STRATEGIST. Antes de enseñar IA, la construí en el mundo real.">
+    <a href="https://buy.stripe.com/6oU3cvetw4xm4fpcD54gg0B" class="btn btn--primary btn--inline bio__cta" data-abrir-pago>QUIERO MI CUPO</a>
   </div>
 </section>
 
 <!-- PREGUNTAS FRECUENTES / OBJECIONES -->
-<section class="seccion faq faq--bento" id="faq" style="background-image: linear-gradient(180deg, rgba(10, 8, 6, 0.55) 0%, rgba(10, 8, 6, 0.75) 100%), url('l/claude-desde-cero/img/faq-fondo.jpg')">
+<section class="seccion faq faq--bento" id="faq" style="background-image: linear-gradient(180deg, rgba(10, 8, 6, 0.55) 0%, rgba(10, 8, 6, 0.75) 100%), url('/l/claude-desde-cero/img/faq-fondo.jpg')">
   <div class="container">
     <p class="seccion__kicker">PREGUNTAS FRECUENTES</p>
     <h2 class="seccion__titulo">
@@ -623,6 +623,186 @@
 </a>
 
 
-<script src="theme/main.js"></script>
+
+
+<dialog class="pago" id="pago-dialogo" data-slug="claude-desde-cero" aria-labelledby="pago-titulo">
+  <div class="pago__caja">
+    <button type="button" class="pago__cerrar" data-pago-cerrar aria-label="Cerrar">&times;</button>
+
+    <form class="pago__vista" data-pago-form novalidate>
+      <header class="pago__cabecera">
+        <h2 class="pago__titulo" id="pago-titulo">APRENDE CLAUDE DESDE CERO</h2>
+        <p class="pago__precio">$57 USD</p>
+      </header>
+
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <h3 class="pago__seccion">Tus datos</h3>
+      <div class="pago__campos">
+        <input type="text" name="nombre" placeholder="Nombre completo" autocomplete="name" maxlength="120" required>
+        <input type="email" name="email" placeholder="Correo electrónico" autocomplete="email" maxlength="160" required>
+        <div class="pago__tel">
+          <select name="indicativo" aria-label="Indicativo del país">
+            <option value="+57" selected>🇨🇴 +57</option><option value="+52">🇲🇽 +52</option><option value="+1">🇺🇸 +1</option><option value="+54">🇦🇷 +54</option><option value="+56">🇨🇱 +56</option><option value="+51">🇵🇪 +51</option><option value="+593">🇪🇨 +593</option><option value="+34">🇪🇸 +34</option><option value="+58">🇻🇪 +58</option><option value="+507">🇵🇦 +507</option><option value="+506">🇨🇷 +506</option><option value="+502">🇬🇹 +502</option><option value="+591">🇧🇴 +591</option><option value="+595">🇵🇾 +595</option><option value="+598">🇺🇾 +598</option><option value="+504">🇭🇳 +504</option><option value="+503">🇸🇻 +503</option><option value="+505">🇳🇮 +505</option>
+          </select>
+          <input type="tel" name="numero" placeholder="300 123 4567" autocomplete="tel-national" inputmode="numeric" maxlength="40" required>
+        </div>
+      </div>
+
+      <h3 class="pago__seccion">Selecciona el método de pago</h3>
+      <div class="pago__opciones" role="radiogroup" aria-label="Método de pago">
+        
+        <label class="pago__opcion">
+          <input type="radio" name="metodo" value="stripe" data-tipo="link" data-url="https://buy.stripe.com/6oU3cvetw4xm4fpcD54gg0B" data-nombre="Tarjeta (Stripe)" data-monto="" data-nota="Visa, Mastercard, Amex" checked>
+          <span class="pago__opcion-caja">
+            <span class="pago__opcion-nombre">Tarjeta (Stripe)</span>
+            
+          </span>
+        </label>
+        
+        <label class="pago__opcion">
+          <input type="radio" name="metodo" value="bancolombia" data-tipo="manual" data-url="" data-nombre="Bancolombia" data-monto="$170.000 COP" data-nota="">
+          <span class="pago__opcion-caja">
+            <span class="pago__opcion-nombre">Bancolombia</span>
+            <span class="pago__opcion-monto">$170.000 COP</span>
+          </span>
+        </label>
+        
+        <label class="pago__opcion">
+          <input type="radio" name="metodo" value="bre-b" data-tipo="manual" data-url="" data-nombre="Bre-B" data-monto="$170.000 COP" data-nota="En tu app bancaria elige Bre-B, pega la llave y confirma que el nombre sea JHEILAB SAS.">
+          <span class="pago__opcion-caja">
+            <span class="pago__opcion-nombre">Bre-B</span>
+            <span class="pago__opcion-monto">$170.000 COP</span>
+          </span>
+        </label>
+        
+        <label class="pago__opcion">
+          <input type="radio" name="metodo" value="zelle" data-tipo="manual" data-url="" data-nombre="Zelle" data-monto="$57 USD" data-nota="">
+          <span class="pago__opcion-caja">
+            <span class="pago__opcion-nombre">Zelle</span>
+            <span class="pago__opcion-monto">$57 USD</span>
+          </span>
+        </label>
+        
+      </div>
+      <p class="pago__nota" data-pago-nota hidden></p>
+
+      <div class="pago__resumen">
+        <span>Total</span>
+        <strong data-pago-total data-precio="$57 USD">$57 USD</strong>
+      </div>
+
+      <p class="pago__error" data-pago-error role="alert" hidden></p>
+      <button type="submit" class="btn btn--primary btn--inline pago__enviar" data-pago-enviar>Continuar</button>
+      <p class="pago__seguro">
+        <span aria-hidden="true">🔒</span> Pago seguro
+        · <a href="https://wa.me/573245139612?text=Hola%20Jhei%20%F0%9F%91%8B%20Tengo%20una%20duda%20sobre%20el%20taller%20%22Aprende%20Claude%20Desde%20Cero%22%20antes%20de%20reservar%20mi%20cupo.%20%C2%BFMe%20puedes%20ayudar%3F" target="_blank" rel="noopener noreferrer">¿Dudas? Escríbenos</a>
+      </p>
+    </form>
+
+    
+    <section class="pago__vista" data-panel="bancolombia" hidden>
+      <button type="button" class="pago__volver" data-pago-volver>&larr; Volver</button>
+      <h2 class="pago__titulo">Bancolombia</h2>
+      <p class="pago__monto">Monto a pagar: <strong>$170.000 COP</strong></p>
+      
+      
+      <dl class="pago__datos">
+        
+        <div class="pago__dato">
+          <dt>Banco</dt>
+          <dd>
+            <span>Bancolombia</span>
+            
+          </dd>
+        </div>
+        
+        <div class="pago__dato">
+          <dt>Tipo de cuenta</dt>
+          <dd>
+            <span>Ahorros</span>
+            
+          </dd>
+        </div>
+        
+        <div class="pago__dato">
+          <dt>Número de cuenta</dt>
+          <dd>
+            <span>55100003695</span>
+            <button type="button" class="pago__copiar" data-copiar data-valor="55100003695">Copiar</button>
+          </dd>
+        </div>
+        
+        <div class="pago__dato">
+          <dt>Titular</dt>
+          <dd>
+            <span>Jhei Lab S.A.S</span>
+            
+          </dd>
+        </div>
+        
+      </dl>
+      
+      <a class="btn btn--primary btn--inline pago__wa" href="https://wa.me/573245139612?text=Hola%20Jhei%20%F0%9F%91%8B%20Ya%20realic%C3%A9%20mi%20pago%20del%20taller%20%22Aprende%20Claude%20Desde%20Cero%22%20por%20Bancolombia.%20Aqu%C3%AD%20te%20env%C3%ADo%20mi%20comprobante%20para%20confirmar%20mi%20cupo." target="_blank" rel="noopener noreferrer">Ya pagué, enviar comprobante</a>
+      
+    </section>
+    
+    <section class="pago__vista" data-panel="bre-b" hidden>
+      <button type="button" class="pago__volver" data-pago-volver>&larr; Volver</button>
+      <h2 class="pago__titulo">Bre-B</h2>
+      <p class="pago__monto">Monto a pagar: <strong>$170.000 COP</strong></p>
+      <p class="pago__sub">En tu app bancaria elige Bre-B, pega la llave y confirma que el nombre sea JHEILAB SAS.</p>
+      
+      <dl class="pago__datos">
+        
+        <div class="pago__dato">
+          <dt>Llave Bre-B</dt>
+          <dd>
+            <span>0092934437</span>
+            <button type="button" class="pago__copiar" data-copiar data-valor="0092934437">Copiar</button>
+          </dd>
+        </div>
+        
+        <div class="pago__dato">
+          <dt>Titular</dt>
+          <dd>
+            <span>JHEILAB SAS</span>
+            
+          </dd>
+        </div>
+        
+      </dl>
+      
+      <a class="btn btn--primary btn--inline pago__wa" href="https://wa.me/573245139612?text=Hola%20Jhei%20%F0%9F%91%8B%20Ya%20realic%C3%A9%20mi%20pago%20del%20taller%20%22Aprende%20Claude%20Desde%20Cero%22%20por%20Bre-B.%20Aqu%C3%AD%20te%20env%C3%ADo%20mi%20comprobante%20para%20confirmar%20mi%20cupo." target="_blank" rel="noopener noreferrer">Ya pagué, enviar comprobante</a>
+      
+    </section>
+    
+    <section class="pago__vista" data-panel="zelle" hidden>
+      <button type="button" class="pago__volver" data-pago-volver>&larr; Volver</button>
+      <h2 class="pago__titulo">Zelle</h2>
+      <p class="pago__monto">Monto a pagar: <strong>$57 USD</strong></p>
+      
+      
+      <dl class="pago__datos">
+        
+        <div class="pago__dato">
+          <dt>Correo Zelle</dt>
+          <dd>
+            <span>jtrujillobetancur@gmail.com</span>
+            <button type="button" class="pago__copiar" data-copiar data-valor="jtrujillobetancur@gmail.com">Copiar</button>
+          </dd>
+        </div>
+        
+      </dl>
+      
+      <a class="btn btn--primary btn--inline pago__wa" href="https://wa.me/573245139612?text=Hola%20Jhei%20%F0%9F%91%8B%20Ya%20realic%C3%A9%20mi%20pago%20del%20taller%20%22Aprende%20Claude%20Desde%20Cero%22%20por%20Zelle.%20Aqu%C3%AD%20te%20env%C3%ADo%20mi%20comprobante%20para%20confirmar%20mi%20cupo." target="_blank" rel="noopener noreferrer">Ya pagué, enviar comprobante</a>
+      
+    </section>
+    
+  </div>
+</dialog>
+
+
+<script src="/theme/main.js"></script>
 </body>
 </html>

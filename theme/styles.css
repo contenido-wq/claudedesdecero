@@ -2368,3 +2368,80 @@ img {
 
 /* Honeypot anti-bots (campo oculto del formulario) */
 .hp{position:absolute!important;left:-9999px!important;top:-9999px!important;opacity:0!important;height:0!important;width:0!important;pointer-events:none!important;}
+
+/* ===== Checkout en modal ===== */
+.pago {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 0;
+  background: var(--bg-elevated);
+  color: var(--text);
+  width: min(480px, calc(100vw - 24px));
+  max-height: calc(100vh - 24px);
+  overflow: auto;
+}
+.pago::backdrop { background: rgba(10, 8, 6, 0.72); backdrop-filter: blur(4px); }
+.pago__caja { position: relative; padding: 26px 22px 22px; }
+.pago__cerrar {
+  position: absolute; top: 10px; right: 14px;
+  background: none; border: 0; color: var(--text-muted);
+  font-size: 28px; line-height: 1; cursor: pointer;
+}
+.pago__cerrar:hover { color: var(--text); }
+.pago__cabecera { padding-right: 28px; margin-bottom: 4px; }
+.pago__titulo { font-family: var(--font-display); font-size: 1.15rem; margin: 0 0 4px; letter-spacing: 0.01em; }
+.pago__precio { font-family: var(--font-display); font-size: 1.7rem; font-weight: 700; margin: 0; color: var(--orange-light); }
+.pago__seccion { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin: 20px 0 10px; font-weight: 600; }
+.pago__campos { display: grid; gap: 10px; }
+.pago__campos input, .pago__campos select {
+  width: 100%; padding: 13px 14px; border-radius: 12px; font: inherit; font-size: 16px;
+  background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
+}
+.pago__campos input:focus, .pago__campos select:focus { outline: 2px solid var(--orange); outline-offset: 1px; }
+.pago__tel { display: grid; grid-template-columns: 110px 1fr; gap: 10px; }
+.pago__opciones { display: grid; gap: 8px; }
+.pago__opcion { display: block; cursor: pointer; }
+.pago__opcion input { position: absolute; opacity: 0; pointer-events: none; }
+.pago__opcion-caja {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 13px 14px; border-radius: 12px;
+  background: var(--bg-card); border: 1px solid var(--border);
+  transition: border-color 0.2s, background 0.2s;
+}
+.pago__opcion:hover .pago__opcion-caja { border-color: rgba(var(--accent-1), 0.5); }
+.pago__opcion input:checked + .pago__opcion-caja {
+  border-color: var(--orange); background: rgba(var(--accent-1), 0.12);
+}
+.pago__opcion input:focus-visible + .pago__opcion-caja { outline: 2px solid var(--orange); outline-offset: 2px; }
+.pago__opcion-nombre { font-weight: 600; }
+.pago__opcion-monto { color: var(--text-muted); font-size: 0.85rem; white-space: nowrap; }
+.pago__nota { color: var(--text-muted); font-size: 0.9rem; margin: 10px 2px 0; }
+.pago__resumen {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin: 18px 0 14px; padding-top: 14px; border-top: 1px solid var(--border);
+}
+.pago__resumen strong { font-size: 1.25rem; color: var(--orange-light); }
+.pago__error { color: #ff8a80; font-size: 0.9rem; margin: 0 0 10px; }
+.pago__enviar { display: block; width: 100%; text-align: center; cursor: pointer; }
+.pago__enviar:disabled { opacity: 0.6; cursor: wait; }
+.pago__seguro { text-align: center; color: var(--text-muted); font-size: 0.82rem; margin: 12px 0 0; }
+.pago__seguro a { color: var(--orange-light); }
+.pago__sub { color: var(--text-muted); font-size: 0.95rem; margin: 0 0 16px; }
+.pago__monto { margin: 0 0 12px; }
+.pago__volver {
+  background: none; border: 0; color: var(--orange-light);
+  cursor: pointer; padding: 0; margin-bottom: 12px; font: inherit;
+}
+.pago__qr {
+  display: block; width: 220px; max-width: 100%; height: auto;
+  margin: 8px auto 16px; border-radius: 12px; background: #fff; padding: 8px;
+}
+.pago__datos { margin: 0 0 18px; display: grid; gap: 10px; }
+.pago__dato dt { color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.pago__dato dd { margin: 2px 0 0; display: flex; align-items: center; justify-content: space-between; gap: 10px; word-break: break-all; }
+.pago__copiar {
+  flex: none; padding: 6px 12px; border-radius: 999px; cursor: pointer;
+  background: transparent; border: 1px solid var(--orange); color: var(--orange-light); font: inherit; font-size: 0.85rem;
+}
+.pago__copiar:hover { background: rgba(var(--accent-1), 0.15); }
+.pago__wa { display: block; text-align: center; }

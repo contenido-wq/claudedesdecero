@@ -1,0 +1,11 @@
+{
+  "claude-desde-cero": {
+    "sheet_id": "1PiE1bxpPFHv-9DDBrcOD7LwP_qrC3Ltky_-5GoGhLWk",
+    "metodos": [
+      "stripe",
+      "bancolombia",
+      "bre-b",
+      "zelle"
+    ]
+  }
+}
